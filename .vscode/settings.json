@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Project 2.sln"
+    "dotnet.defaultSolution": "CMPM-179-Project-2.sln"
 }
