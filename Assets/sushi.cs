@@ -15,15 +15,8 @@ public class sushi : MonoBehaviour
     {
         if (isMoving)
         {
-            // Move towards the target position in the x-direction
-            transform.Translate(Vector3.right * speed * Time.deltaTime);
+            transform.Translate(Vector3.right * -1 * speed * Time.deltaTime);
 
-            // Check if the object has reached the trigger
-            if (transform.position.x >= target.position.x)
-            {
-                // Object has hit the trigger, so move back to the pool
-                MoveToPool();
-            }
         }
     }
 
@@ -46,7 +39,7 @@ public class sushi : MonoBehaviour
     {
         if (other.gameObject.tag == "Submission")
         {
-            gameObject.setActive(false);
+            gameObject.SetActive(false);
         }
     }
 
